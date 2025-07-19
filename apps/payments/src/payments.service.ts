@@ -8,7 +8,7 @@ export class PaymentsService {
   private readonly stripe = new Stripe(
     this.configService.get('STRIPE_SECRET_KEY'),
     {
-      apiVersion: '2025-05-28.basil',
+      apiVersion: '2025-04-30.basil',
     },
   );
   constructor(private readonly configService: ConfigService) {}
